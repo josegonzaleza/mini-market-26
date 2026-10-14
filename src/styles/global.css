@@ -1,0 +1,21 @@
+@import './variables.css';
+@import './store.css';
+@import './layout.css';
+@import './home.css';
+@import './mascot.css';
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+h1, h2, h3 { line-height: 1.2; margin: 0 0 var(--space-3); }
+p { margin: 0 0 var(--space-3); }
+a { color: var(--navy); }
+:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
